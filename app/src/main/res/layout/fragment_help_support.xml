@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_5"
+        android:layout_marginRight="@dimen/dim_5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="@dimen/dim_50"
+            android:layout_height="@dimen/dim_130"
+            android:layout_margin="@dimen/dim_5"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_5">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="G3+ GARMENT SHOWROOM"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dim_10"
+                android:textStyle="bold" />
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dim_5"
+                android:padding="@dimen/dim_5"
+                android:text="251/A, SUTARIYA TOWN, \n NEAR JOLLY SHOPPING, \n GOD DOAD ROAD, \n SURAT- 395007"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dim_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dim_50"
+            android:layout_height="@dimen/dim_130"
+            android:layout_margin="@dimen/dim_5"
+            android:layout_weight="1"
+            android:background="@color/colorBlack"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_5">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Customer Care No:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dim_10" />
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dim_5"
+                android:padding="@dimen/dim_5"
+                android:text="+91 99134 33322"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dim_10"
+                android:textStyle="bold" />
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dim_5"
+                android:text="(8:30 AM - 9:30 PM) \n (Monday - Saturday)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dim_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_5"
+        android:layout_marginRight="@dimen/dim_5"
+        android:layout_marginTop="@dimen/dim_10"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_5">
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dim_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="General Questions"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_13" />
+
+                <ImageView
+                    android:id="@+id/iv_img_down"
+                    android:layout_width="@dimen/dim_25"
+                    android:layout_height="@dimen/dim_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_down1"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_img_down"
+                android:background="@color/colorGreyDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Merchandise Related Quaries"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_13" />
+
+                <ImageView
+                    android:id="@+id/iv_img_down2"
+                    android:layout_width="@dimen/dim_25"
+                    android:layout_height="@dimen/dim_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_down1"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_img_down2"
+                android:background="@color/colorGreyDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Payment / Tender related Quaries"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_13" />
+
+                <ImageView
+                    android:id="@+id/iv_img_down3"
+                    android:layout_width="@dimen/dim_25"
+                    android:layout_height="@dimen/dim_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_down1"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_img_down2"
+                android:background="@color/colorGreyDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Cancellation /Returns /Refund related Quaries"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_13" />
+
+                <ImageView
+                    android:id="@+id/iv_img_down4"
+                    android:layout_width="@dimen/dim_25"
+                    android:layout_height="@dimen/dim_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_down1"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_img_down2"
+                android:background="@color/colorGreyDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Privacy / Security related Quaries"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_13" />
+
+                <ImageView
+                    android:id="@+id/iv_img_down5"
+                    android:layout_width="@dimen/dim_25"
+                    android:layout_height="@dimen/dim_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_down1"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_img_down2"
+                android:background="@color/colorGreyDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Shipping Related Quaries"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_13" />
+
+                <ImageView
+                    android:id="@+id/iv_img_down6"
+                    android:layout_width="@dimen/dim_25"
+                    android:layout_height="@dimen/dim_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_down1"
+                    android:tint="@color/colorAccent" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

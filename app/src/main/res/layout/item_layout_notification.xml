@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10">
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididant ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud "
+            android:textSize="@dimen/dim_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:id="@+id/tv_read_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Read More"
+                android:textSize="@dimen/dim_12" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dim_10">
+
+                <ImageView
+                    android:id="@+id/iv_calender"
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:src="@drawable/ic_date"
+                    android:tint="@color/colorAccent" />
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_toRightOf="@+id/iv_calender"
+                    android:text="30-05-2017"
+                    android:textSize="@dimen/dim_12"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1"
+        android:background="@color/colorDividerGray" />
+</LinearLayout>

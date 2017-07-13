@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_10">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dim_40"
+            android:layout_height="@dimen/dim_40"
+            android:src="@drawable/next_icon" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim_20"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/colorTextDark">
+
+            <EditText
+                android:id="@+id/et_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/tv_error_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile No"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_16"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_generate_otp"
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/button_selector"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:text="GENERATE OTP"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:layout_marginRight="@dimen/dim_15"
+            android:textColorHint="@color/colorTextDark"
+            android:theme="@style/Theme">
+
+            <EditText
+                android:id="@+id/et_otp_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textSize="@dimen/text_16" />
+
+
+            <TextView
+                android:id="@+id/tv_error_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter OTP No"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/text_16"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_login"
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/button_selector"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_16" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_40"
+        android:orientation="vertical">
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Not Registered Yet? Register Now"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="@dimen/dim_14"
+            android:textStyle="bold" />
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_register"
+            android:layout_width="@dimen/dim_130"
+            android:layout_height="@dimen/dim_35"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/button_selector"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_16" />
+
+    </LinearLayout>
+
+</RelativeLayout>

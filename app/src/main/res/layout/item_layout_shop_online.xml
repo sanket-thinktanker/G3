@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_shop_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dim_5"
+            android:paddingBottom="@dimen/dim_5"
+            android:paddingLeft="@dimen/dim_8"
+            android:text="Men"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

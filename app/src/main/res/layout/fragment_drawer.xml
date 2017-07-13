@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_g3_trends_cp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_g3_trends_club"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="G3+ TRENDS CLUB POINTS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:id="@+id/tv_point_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dim_10"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:paddingBottom="@dimen/dim_10"
+                    android:text="Points Summary"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_14"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_store_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_store_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="STORE OFFER ZONE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_store_offer_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:scrollbars="none"
+                    android:visibility="visible"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_g3_coupon_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_coupon_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="G3+ COUPON TYPES"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_coupon_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:scrollbars="none"
+                    android:visibility="visible"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_share_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_share_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="SHARE AND FEEDBACK"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_share_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:id="@+id/tv_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dim_10"
+                        android:paddingBottom="@dimen/dim_5"
+                        android:paddingLeft="@dimen/dim_8"
+                        android:text="Feedback"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:visibility="visible" />
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dim_5"
+                        android:paddingBottom="@dimen/dim_10"
+                        android:paddingLeft="@dimen/dim_8"
+                        android:text="Rate This App"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_help_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_help_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="HELP AND SUPPORT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_help_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dim_10"
+                        android:paddingBottom="@dimen/dim_5"
+                        android:paddingLeft="@dimen/dim_8"
+                        android:text="FAQ"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:visibility="visible" />
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:id="@+id/tv_help_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dim_5"
+                        android:paddingBottom="@dimen/dim_5"
+                        android:paddingLeft="@dimen/dim_8"
+                        android:text="Help / Support"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:visibility="visible" />
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dim_5"
+                        android:paddingBottom="@dimen/dim_10"
+                        android:paddingLeft="@dimen/dim_8"
+                        android:text="About Us"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_account_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_account_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="ACCOUNT DETAILS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dim_10"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/ll_shop_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_shop_online"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="SHOP ONLINE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_shop_online"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_marginBottom="@dimen/dim_5"
+                    android:scrollbars="none"
+                    android:visibility="visible"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_g3_video_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="G3+ VIDEO SHOPPING LINK"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dim_10"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/ll_store_locator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="STORE LOCATOR"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dim_10"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/ll_reference_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="REFERENCE FRIENDS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dim_10"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/ll_customer_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rv_customer_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_25"
+                    android:background="@color/colorAccent">
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:text="CUSTOMERS REVIEW"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="@dimen/text_14" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim_40"
+                android:layout_marginLeft="@dimen/dim_30"
+                android:layout_marginTop="@dimen/dim_20"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dim_40"
+                    android:layout_height="@dimen/dim_10"
+                    android:src="@drawable/drawer_back_arrow" />
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_5"
+                    android:text="Back"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dim_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
