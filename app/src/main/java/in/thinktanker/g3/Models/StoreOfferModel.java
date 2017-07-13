@@ -5,7 +5,7 @@ package in.thinktanker.g3.Models;
  */
 public class StoreOfferModel {
 
-    String id,text;
+    private String id,text;
 
     public StoreOfferModel(String id, String text) {
         this.id = id;

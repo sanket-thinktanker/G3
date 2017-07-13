@@ -4,8 +4,8 @@ package in.thinktanker.g3.Models;
  * Created by MY PC on 10-Jul-17.
  */
 public class AddressModel {
-    String id;
-    String name,address,number;
+    private  String id;
+    private String name,address,number;
 
     public AddressModel(String id, String name, String address, String number) {
         this.id = id;

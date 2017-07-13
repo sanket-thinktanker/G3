@@ -27,14 +27,14 @@ public class TextViewLight extends TextView {
     }
     public void a() {
         if (Build.VERSION.SDK_INT < 21) {
-            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Montserrat-Light.ttf"), 0);
+            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "OpenSans-Light.ttf"), 0);
             return;
         }
         int i = getTypeface().getStyle();
         if (i == 1) {
-            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Montserrat-Light.ttf"), i);
+            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "OpenSans-Light.ttf"), i);
             return;
         }
-        setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Montserrat-Light.ttf"), 0);
+        setTypeface(Typeface.createFromAsset(getContext().getAssets(), "OpenSans-Light.ttf"), 0);
     }
 }

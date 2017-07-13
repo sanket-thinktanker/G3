@@ -4,7 +4,7 @@ package in.thinktanker.g3.Models;
  * Created by MY PC on 07-Jul-17.
  */
 public class CouponTypeModel {
-    String id,coupon_type;
+    private String id,coupon_type;
 
     public CouponTypeModel(String id, String coupon_type) {
         this.id = id;

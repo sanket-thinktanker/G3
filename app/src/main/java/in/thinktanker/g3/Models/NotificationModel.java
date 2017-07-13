@@ -4,7 +4,7 @@ package in.thinktanker.g3.Models;
  * Created by MY PC on 11-Jul-17.
  */
 public class NotificationModel {
-    String notification, read_more,date;
+    private String notification, read_more,date;
 
     public NotificationModel(String notification, String read_more, String date) {
         this.notification = notification;

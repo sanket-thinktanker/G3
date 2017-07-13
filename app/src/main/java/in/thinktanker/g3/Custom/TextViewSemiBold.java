@@ -28,14 +28,14 @@ public class TextViewSemiBold extends TextView {
 
     public void a() {
         if (Build.VERSION.SDK_INT < 21) {
-            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Montserrat-SemiBold.ttf"), 0);
+            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "OpenSans-SemiBold.ttf"), 0);
             return;
         }
         int i = getTypeface().getStyle();
         if (i == 1) {
-            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Montserrat-SemiBold.ttf"), i);
+            setTypeface(Typeface.createFromAsset(getContext().getAssets(), "OpenSans-SemiBold.ttf"), i);
             return;
         }
-        setTypeface(Typeface.createFromAsset(getContext().getAssets(), "Montserrat-SemiBold.ttf"), 0);
+        setTypeface(Typeface.createFromAsset(getContext().getAssets(), "OpenSans-SemiBold.ttf"), 0);
     }
 }

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_12">
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_redeem_now"
+        android:layout_marginBottom="@dimen/dim_5"
+        android:orientation="vertical">
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Shopping Points"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dim_20" />
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_10"
+            android:text="Loved Shopping with us? For everytime you shop with us we gift you"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_11" />
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_5"
+            android:gravity="center"
+            android:text="some points in your wallet through which you can shop next time."
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_11" />
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_10"
+            android:text="Your points Till 15-06-2017"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_11" />
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_5"
+            android:text="1200"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dim_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_15"
+            android:background="@drawable/layout_border"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shopping Details"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/dim_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDividerGray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dim_8">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Points"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/dim_14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_shopping_ledger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <in.thinktanker.g3.Custom.TextViewLight
+        android:id="@+id/tv_redeem_now"
+        android:layout_width="@dimen/dim_150"
+        android:layout_height="@dimen/dim_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="REDEEM NOW"
+        android:textColor="@color/colorTextDark"
+        android:textSize="@dimen/dim_14" />
+</RelativeLayout>

@@ -26,13 +26,13 @@ public class StoreOfferAdapter extends RecyclerView.Adapter<StoreOfferAdapter.Vi
     }
 
     @Override
-    public StoreOfferAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_store_offer, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(StoreOfferAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         StoreOfferModel storeOfferModel = list.get(position);
         holder.tv_men.setText(storeOfferModel.getText());
     }

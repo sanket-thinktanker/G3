@@ -26,13 +26,13 @@ public class CouponTypeAdapter extends RecyclerView.Adapter<CouponTypeAdapter.Vi
     }
 
     @Override
-    public CouponTypeAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_coupon_type, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(CouponTypeAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         CouponTypeModel couponTypeModel = couponlist.get(position);
         holder.tv_coupon_type.setText(couponTypeModel.getCoupon_type());
     }

@@ -4,9 +4,9 @@ package in.thinktanker.g3.Models;
  * Created by MY PC on 10-Jul-17.
  */
 public class CustomerReviewModel {
-    int image;
+    private  int image;
     //String url;
-    String id, title, description, name;
+    private String id, title, description, name;
 
     public CustomerReviewModel(String id,int image, String title, String description, String name) {
        // this.url = url;

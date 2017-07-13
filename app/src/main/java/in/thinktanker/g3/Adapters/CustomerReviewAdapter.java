@@ -26,13 +26,13 @@ public class CustomerReviewAdapter extends RecyclerView.Adapter<CustomerReviewAd
     }
 
     @Override
-    public CustomerReviewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_customer_review, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(CustomerReviewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         CustomerReviewModel model = reviewlist.get(position);
         holder.iv_image.setImageResource(model.getImage());
         holder.tv_title.setText(model.getTitle());

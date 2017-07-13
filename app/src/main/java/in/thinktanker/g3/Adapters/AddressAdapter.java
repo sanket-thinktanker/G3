@@ -26,13 +26,13 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHold
     }
 
     @Override
-    public AddressAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_address, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(AddressAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
     AddressModel model=addresslist.get(position);
         holder.tv_name.setText(model.getName());
         holder.tv_address.setText(model.getAddress());

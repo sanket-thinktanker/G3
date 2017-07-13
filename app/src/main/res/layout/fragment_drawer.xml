@@ -401,6 +401,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/rl_store_locator"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dim_25"
                     android:background="@color/colorAccent">
@@ -436,6 +437,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/rl_reference_friend"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dim_25"
                     android:background="@color/colorAccent">
@@ -471,7 +473,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:id="@+id/rv_customer_review"
+                    android:id="@+id/rl_customer_review"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dim_25"
                     android:background="@color/colorAccent">

@@ -50,13 +50,12 @@ public class FragmentCustomerReview extends Fragment {
 
     private void setCustomerReview() {
         listcustomerreview = new ArrayList<CustomerReviewModel>();
-        listcustomerreview.add(new CustomerReviewModel("1",R.drawable.customer_review_image_2, "Best Ethnic Collection Ever !", "I got the product exactly same as shown in image ! the quality of the product is amazing and pretty well and i revived the products before date, service is very fast and G3 team is very quick to answer all my questions and i would definately buy with G3fashion.com", "Kailash"));
-        listcustomerreview.add(new CustomerReviewModel("1",R.drawable.customer_review_image_3, "Best Quality Product !!", "I got the product same as shown in online and it was such an premium quality product and customer service is very fast to resolve all the quay", "Khushi Chavla"));
+        listcustomerreview.add(new CustomerReviewModel("1", R.drawable.customer_review_image_2, "Best Ethnic Collection Ever !", "I got the product exactly same as shown in image ! the quality of the product is amazing and pretty well and i revived the products before date, service is very fast and G3 team is very quick to answer all my questions and i would definately buy with G3fashion.com", "Kailash"));
+        listcustomerreview.add(new CustomerReviewModel("2", R.drawable.customer_review_image_3, "Best Quality Product !!", "I got the product same as shown in online and it was such an premium quality product and customer service is very fast to resolve all the quay", "Khushi Chavla"));
 
         CustomerReviewAdapter customerReviewAdapter = new CustomerReviewAdapter(listcustomerreview, getActivity());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         rv_customer_review.setLayoutManager(layoutManager);
         rv_customer_review.setAdapter(customerReviewAdapter);
     }
-
 }

@@ -25,13 +25,13 @@ public class ShopOnlineAdapter extends RecyclerView.Adapter<ShopOnlineAdapter.Vi
     }
 
     @Override
-    public ShopOnlineAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout_shop_online, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ShopOnlineAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         ShopOnlineModel shopOnlineModel = shoplist.get(position);
         holder.tv_shop_online.setText(shopOnlineModel.getText());
     }

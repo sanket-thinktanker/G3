@@ -4,7 +4,7 @@ package in.thinktanker.g3.Models;
  * Created by MY PC on 07-Jul-17.
  */
 public class ShopOnlineModel {
-    String id,text;
+    private  String id,text;
 
     public ShopOnlineModel(String id, String text) {
         this.id = id;

@@ -61,7 +61,7 @@ public class FragmentAddress extends Fragment {
         listaddress = new ArrayList<AddressModel>();
         listaddress.add(new AddressModel("1", "Miss Lorem lipsum", "C-801,  XYZ building, ABC Street, Mumbai,Maharashtra,400097", "9876543210"));
 
-        AddressAdapter addressAdapter = new AddressAdapter(listaddress, getActivity());
+         addressAdapter = new AddressAdapter(listaddress, getActivity());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         rv_address.setLayoutManager(layoutManager);
         rv_address.setAdapter(addressAdapter);
