@@ -20,6 +20,7 @@ public class HomeActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //test for git update.
+        //test from megha lapy
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
         setSideMenu();
