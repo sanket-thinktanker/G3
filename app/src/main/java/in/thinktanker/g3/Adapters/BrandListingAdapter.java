@@ -48,7 +48,6 @@ public class BrandListingAdapter extends RecyclerView.Adapter<BrandListingAdapte
 
         public ViewHolder(View itemView) {
             super(itemView);
-
             iv_brand_img = (ImageView) itemView.findViewById(R.id.iv_brand_img);
         }
     }
