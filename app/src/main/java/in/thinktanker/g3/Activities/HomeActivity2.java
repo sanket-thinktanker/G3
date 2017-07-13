@@ -19,6 +19,7 @@ public class HomeActivity2 extends AppCompatActivity {
     FragmentDrawer fragmentDrawer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //test for git update.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
         setSideMenu();
