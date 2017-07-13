@@ -49,16 +49,15 @@
                     android:id="@+id/tv_point_summary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/dim_10"
-                    android:paddingLeft="@dimen/dim_8"
-                    android:paddingBottom="@dimen/dim_10"
-                    android:text="Points Summary"
                     android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dim_10"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:paddingTop="@dimen/dim_10"
+                    android:text="Points Summary"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/text_14"
                     android:visibility="visible" />
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -93,13 +92,12 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_store_offer_zone"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_height="120dp"
                     android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_5"
                     android:scrollbars="none"
                     android:visibility="visible"></android.support.v7.widget.RecyclerView>
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -134,13 +132,12 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_coupon_type"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_height="100dp"
                     android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_5"
                     android:scrollbars="none"
                     android:visibility="visible"></android.support.v7.widget.RecyclerView>
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -183,9 +180,9 @@
                         android:id="@+id/tv_feedback"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/dim_10"
                         android:paddingBottom="@dimen/dim_5"
                         android:paddingLeft="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_10"
                         android:text="Feedback"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_14"
@@ -194,16 +191,15 @@
                     <in.thinktanker.g3.Custom.TextViewLight
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/dim_5"
                         android:paddingBottom="@dimen/dim_10"
                         android:paddingLeft="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_5"
                         android:text="Rate This App"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_14"
                         android:visibility="visible" />
                 </LinearLayout>
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -245,9 +241,9 @@
                     <in.thinktanker.g3.Custom.TextViewLight
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/dim_10"
                         android:paddingBottom="@dimen/dim_5"
                         android:paddingLeft="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_10"
                         android:text="FAQ"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_14"
@@ -257,9 +253,9 @@
                         android:id="@+id/tv_help_support"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/dim_5"
                         android:paddingBottom="@dimen/dim_5"
                         android:paddingLeft="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_5"
                         android:text="Help / Support"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_14"
@@ -268,16 +264,15 @@
                     <in.thinktanker.g3.Custom.TextViewLight
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/dim_5"
                         android:paddingBottom="@dimen/dim_10"
                         android:paddingLeft="@dimen/dim_8"
+                        android:paddingTop="@dimen/dim_5"
                         android:text="About Us"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_14"
                         android:visibility="visible" />
                 </LinearLayout>
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -306,7 +301,6 @@
                         android:textColor="@color/colorTextDark"
                         android:textSize="@dimen/text_14" />
 
-
                 </RelativeLayout>
 
             </LinearLayout>
@@ -314,8 +308,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
-                android:layout_marginTop="@dimen/dim_10"
-                ></View>
+                android:layout_marginTop="@dimen/dim_10"></View>
 
             <LinearLayout
                 android:id="@+id/ll_shop_online"
@@ -349,13 +342,12 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_shop_online"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dim_5"
+                    android:layout_height="100dp"
                     android:layout_marginBottom="@dimen/dim_5"
+                    android:layout_marginTop="@dimen/dim_5"
                     android:scrollbars="none"
                     android:visibility="visible"></android.support.v7.widget.RecyclerView>
             </LinearLayout>
-
 
 
             <LinearLayout
@@ -391,8 +383,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
-                android:layout_marginTop="@dimen/dim_10"
-                ></View>
+                android:layout_marginTop="@dimen/dim_10"></View>
 
             <LinearLayout
                 android:id="@+id/ll_store_locator"
@@ -427,8 +418,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
-                android:layout_marginTop="@dimen/dim_10"
-                ></View>
+                android:layout_marginTop="@dimen/dim_10"></View>
 
             <LinearLayout
                 android:id="@+id/ll_reference_friend"
@@ -463,8 +453,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
-                android:layout_marginTop="@dimen/dim_10"
-                ></View>
+                android:layout_marginTop="@dimen/dim_10"></View>
 
             <LinearLayout
                 android:id="@+id/ll_customer_review"

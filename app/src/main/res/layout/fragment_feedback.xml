@@ -7,6 +7,13 @@
     android:padding="@dimen/dim_10">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/tv_submit"
+        android:layout_marginBottom="@dimen/dim_50">
+
+    <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -125,9 +132,9 @@
             android:background="@drawable/edittext_border"
             android:cursorVisible="false"
             android:gravity="top"
-            android:padding="@dimen/dim_5"/>
+            android:padding="@dimen/dim_5" />
     </RelativeLayout>
-
+    </LinearLayout>
     <in.thinktanker.g3.Custom.TextViewLight
         android:id="@+id/tv_submit"
         android:layout_width="@dimen/dim_170"

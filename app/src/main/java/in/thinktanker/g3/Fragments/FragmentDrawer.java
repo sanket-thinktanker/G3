@@ -190,7 +190,7 @@ public class FragmentDrawer extends Fragment {
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), customerReview, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
 
-               /* FragmentNotification customerReview = new FragmentNotification();
+                /*FragmentNotification customerReview = new FragmentNotification();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), customerReview, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);*/
 

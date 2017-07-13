@@ -13,27 +13,42 @@
         android:weightSum="4">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_60"
-            android:layout_height="@dimen/dim_60"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
             android:src="@drawable/account_detail_img" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_60"
-            android:layout_height="@dimen/dim_60"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
+            android:layout_marginLeft="@dimen/dim_20"
+
+            android:src="@drawable/account_detail_img" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
             android:layout_marginLeft="@dimen/dim_20"
             android:src="@drawable/account_detail_img" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_60"
-            android:layout_height="@dimen/dim_60"
+        <RelativeLayout
+            android:id="@+id/rl_more"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
             android:layout_marginLeft="@dimen/dim_20"
-            android:src="@drawable/account_detail_img" />
+            android:background="@drawable/circle_text">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_60"
-            android:layout_height="@dimen/dim_60"
-
-            android:src="@drawable/account_detail_img" />
+            <!--     <de.hdodenhof.circleimageview.CircleImageView
+                     android:layout_width="@dimen/dim_60"
+                     android:layout_height="@dimen/dim_60"
+                     android:layout_marginLeft="@dimen/dim_20" />-->
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="MORE"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dim_14" />
+        </RelativeLayout>
 
     </LinearLayout>
 

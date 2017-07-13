@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/dim_10">
+        android:layout_marginRight="@dimen/dim_5">
 
         <ImageView
             android:id="@+id/iv_edit_address"
