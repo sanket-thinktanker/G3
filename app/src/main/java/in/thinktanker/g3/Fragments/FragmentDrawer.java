@@ -121,7 +121,11 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
-                FragmentBrandListing brandListing=new FragmentBrandListing();
+               /* FragmentBrandListing brandListing=new FragmentBrandListing();
+                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
+                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);*/
+
+                FragmentDealsofVendor brandListing=new FragmentDealsofVendor();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
             }

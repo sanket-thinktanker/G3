@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_110"
+        android:background="@color/colorgrey">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:orientation="vertical">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:id="@+id/tv_offers_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="5"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dim_40" />
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="offers"
+                android:textColor="@color/colorTextMedium"
+                android:textSize="@dimen/dim_18" />
+
+        </LinearLayout>
+
+        <in.thinktanker.g3.Custom.TextViewSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="MEN"
+            android:textSize="@dimen/dim_20" />
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:layout_width="@dimen/dim_110"
+            android:layout_height="@dimen/dim_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dim_10"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="VIEW MORE"
+            android:textColor="@color/colorTextDark" />
+    </RelativeLayout>
+</LinearLayout>
