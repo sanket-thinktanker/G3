@@ -13,28 +13,33 @@
         android:weightSum="4">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_70"
-            android:layout_height="@dimen/dim_70"
-            android:src="@drawable/account_detail_img" />
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dim_60"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:src="@drawable/account_detail_img"
+            android:layout_weight="1"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_70"
-            android:layout_height="@dimen/dim_70"
-            android:layout_marginLeft="@dimen/dim_20"
-
-            android:src="@drawable/account_detail_img" />
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dim_60"
+            android:layout_marginLeft="@dimen/dim_30"
+            android:src="@drawable/account_detail_img"
+            android:layout_weight="1"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/dim_70"
-            android:layout_height="@dimen/dim_70"
-            android:layout_marginLeft="@dimen/dim_20"
-            android:src="@drawable/account_detail_img" />
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dim_60"
+            android:layout_marginLeft="@dimen/dim_30"
+            android:src="@drawable/account_detail_img"
+            android:layout_weight="1"/>
 
         <RelativeLayout
             android:id="@+id/rl_more"
-            android:layout_width="@dimen/dim_70"
-            android:layout_height="@dimen/dim_70"
-            android:layout_marginLeft="@dimen/dim_20"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dim_60"
+            android:layout_marginLeft="@dimen/dim_30"
+
+            android:layout_weight="1"
             android:background="@drawable/circle_text">
 
             <!--     <de.hdodenhof.circleimageview.CircleImageView
@@ -47,7 +52,7 @@
                 android:layout_centerInParent="true"
                 android:text="MORE"
                 android:textColor="@color/colorAccent"
-                android:textSize="@dimen/dim_14" />
+                android:textSize="@dimen/dim_12" />
         </RelativeLayout>
 
     </LinearLayout>

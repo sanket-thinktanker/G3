@@ -12,26 +12,28 @@
         android:layout_above="@+id/tv_write_review"
         android:layout_marginBottom="@dimen/dim_5">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dim_150"
-            android:scaleType="fitXY"
-            android:src="@drawable/customer_review_image_1" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dim_20"
+            android:orientation="vertical">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_customer_review"
-            android:layout_width="match_parent"
-            android:layout_height="330dp"
-            android:layout_marginTop="@dimen/dim_10"
-            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_150"
+                android:scaleType="fitXY"
+                android:src="@drawable/customer_review_image_1" />
 
-    </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_customer_review"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginTop="@dimen/dim_10"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
+
     <in.thinktanker.g3.Custom.TextViewLight
         android:id="@+id/tv_write_review"
         android:layout_width="@dimen/dim_170"

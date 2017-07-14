@@ -98,7 +98,8 @@
             android:layout_height="wrap_content"
             android:text="Frequently Asked Questions"
             android:textColor="@color/colorAccent"
-            android:textSize="@dimen/dim_14" />
+            android:textSize="@dimen/dim_14"
+            android:layout_marginLeft="@dimen/dim_10"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,10 +110,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
                 android:orientation="horizontal"
                 android:padding="@dimen/dim_8">
 
-                <in.thinktanker.g3.Custom.TextViewLight
+                <in.thinktanker.g3.Custom.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -142,10 +144,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
                 android:orientation="horizontal"
                 android:padding="@dimen/dim_8">
 
-                <in.thinktanker.g3.Custom.TextViewLight
+                <in.thinktanker.g3.Custom.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -174,10 +177,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
                 android:orientation="horizontal"
                 android:padding="@dimen/dim_8">
 
-                <in.thinktanker.g3.Custom.TextViewLight
+                <in.thinktanker.g3.Custom.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -207,10 +211,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
                 android:orientation="horizontal"
                 android:padding="@dimen/dim_8">
 
-                <in.thinktanker.g3.Custom.TextViewLight
+                <in.thinktanker.g3.Custom.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -239,10 +244,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
                 android:orientation="horizontal"
                 android:padding="@dimen/dim_8">
 
-                <in.thinktanker.g3.Custom.TextViewLight
+                <in.thinktanker.g3.Custom.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -271,10 +277,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
                 android:orientation="horizontal"
                 android:padding="@dimen/dim_8">
 
-                <in.thinktanker.g3.Custom.TextViewLight
+                <in.thinktanker.g3.Custom.TextViewSemiBold
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"

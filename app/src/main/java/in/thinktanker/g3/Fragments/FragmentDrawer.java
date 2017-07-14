@@ -95,52 +95,31 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
-             /*   if (tv_point_summary.getVisibility() == View.VISIBLE) {
-                    tv_point_summary.setVisibility(View.GONE);
-                    iv_g3_trnds_club.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_up));
-                } else {
-                    tv_point_summary.setVisibility(View.VISIBLE);
-                    iv_g3_trnds_club.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_down));
-                }*/
+
             }
         });
 
         rl_store_offer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* if (rv_store_offer_zone.getVisibility() == View.VISIBLE) {
-                    rv_store_offer_zone.setVisibility(View.GONE);
-                    iv_store_zone.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_up));
-                } else {
-                    rv_store_offer_zone.setVisibility(View.VISIBLE);
-                    iv_store_zone.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_down));
-                }*/
+
             }
         });
 
         rl_coupon_type.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* if (rv_coupon_type.getVisibility() == View.VISIBLE) {
-                    rv_coupon_type.setVisibility(View.GONE);
-                    iv_coupon_type.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_up));
-                } else {
-                    rv_coupon_type.setVisibility(View.VISIBLE);
-                    iv_coupon_type.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_down));
-                }*/
+
+                FragmentCouponCategory brandListing=new FragmentCouponCategory();
+                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
+                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
+
             }
         });
 
         rl_share_feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*if (ll_item_share_feedback.getVisibility() == View.VISIBLE) {
-                    ll_item_share_feedback.setVisibility(View.GONE);
-                    iv_share_feedback.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_up));
-                } else {
-                    ll_item_share_feedback.setVisibility(View.VISIBLE);
-                    iv_share_feedback.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_down));
-                }*/
 
                 FragmentBrandListing brandListing=new FragmentBrandListing();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
@@ -151,26 +130,14 @@ public class FragmentDrawer extends Fragment {
         rl_help_support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* if (ll_item_help_support.getVisibility() == View.VISIBLE) {
-                    ll_item_help_support.setVisibility(View.GONE);
-                    iv_help_support.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_up));
-                } else {
-                    ll_item_help_support.setVisibility(View.VISIBLE);
-                    iv_help_support.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_down));
-                }*/
+
             }
         });
 
         rl_shop_online.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* if (rv_shop_online.getVisibility() == View.VISIBLE) {
-                    rv_shop_online.setVisibility(View.GONE);
-                    iv_shop_online.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_up));
-                } else {
-                    rv_shop_online.setVisibility(View.VISIBLE);
-                    iv_shop_online.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.ic_arrow_down));
-                }*/
+
             }
         });
 
