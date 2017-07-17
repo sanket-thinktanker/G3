@@ -9,43 +9,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="4">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="@dimen/dim_60"
-            android:layout_marginLeft="@dimen/dim_10"
-            android:src="@drawable/account_detail_img"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:src="@drawable/account_detail_img" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="@dimen/dim_60"
-            android:layout_marginLeft="@dimen/dim_30"
-            android:src="@drawable/account_detail_img"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:src="@drawable/account_detail_img" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="@dimen/dim_60"
-            android:layout_marginLeft="@dimen/dim_30"
-            android:src="@drawable/account_detail_img"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:src="@drawable/account_detail_img" />
 
         <RelativeLayout
             android:id="@+id/rl_more"
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="@dimen/dim_60"
-            android:layout_marginLeft="@dimen/dim_30"
-
             android:layout_weight="1"
             android:background="@drawable/circle_text">
 
-            <!--     <de.hdodenhof.circleimageview.CircleImageView
-                     android:layout_width="@dimen/dim_60"
-                     android:layout_height="@dimen/dim_60"
-                     android:layout_marginLeft="@dimen/dim_20" />-->
+            <!-- <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_width="@dimen/dim_60"
+                 android:layout_height="@dimen/dim_60"
+                 android:background="@drawable/circle_text" />-->
+
             <in.thinktanker.g3.Custom.TextViewLight
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,6 +50,7 @@
                 android:text="MORE"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/dim_12" />
+
         </RelativeLayout>
 
     </LinearLayout>

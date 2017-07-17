@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgrey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_buttons">
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim_5">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dim_150"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5"
+                android:gravity="right|top"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spn_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_30"
+                    android:entries="@array/array_catalogue" />
+
+                <ImageView
+                    android:layout_width="@dimen/dim_1"
+                    android:layout_height="@dimen/dim_1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_down"
+                    android:tint="@color/colorAccent" />
+            </RelativeLayout>
+
+            <!-- <Spinner
+                 android:layout_width="@dimen/dim_150"
+                 android:layout_height="wrap_content"
+                 android:backgroundTint="@color/colorAccent"
+                 android:entries="@array/array_catalogue"></Spinner>-->
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:id="@+id/tv_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_marginTop="@dimen/dim_10"
+                android:text="9870 items"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/dim_10" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_catalogue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_main"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_30"
+            android:layout_margin="@dimen/dim_5"
+            android:layout_weight="1">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:id="@+id/tv_sort_by"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_selector"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:text="SORT BY"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/dim_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dim_30"
+                android:src="@drawable/catalogue_img_sortby" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dim_200"
+            android:layout_height="@dimen/dim_30"
+            android:layout_margin="@dimen/dim_5"
+            android:layout_weight="1">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:id="@+id/tv_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_selector"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:text="FILTER"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/dim_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dim_40"
+                android:src="@drawable/catalogue_img_filter" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

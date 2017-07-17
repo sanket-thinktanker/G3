@@ -32,8 +32,8 @@
                 android:layout_width="40.0dip"
                 android:layout_height="40.0dip"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/dim_10"
                 android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dim_10"
                 android:clickable="true"
                 android:foreground="?selectableItemBackground"
                 android:gravity="center">
@@ -62,6 +62,16 @@
                     android:textSize="12.0sp"
                     android:visibility="visible" />
             </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_toLeftOf="@+id/rl_fav"
+                android:src="@drawable/ic_notification"
+                android:tint="@color/colorTextMedium" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 </RelativeLayout>

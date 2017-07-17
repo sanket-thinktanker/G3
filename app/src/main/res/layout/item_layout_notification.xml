@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dim_10">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,7 +53,7 @@
                     android:layout_marginLeft="@dimen/dim_10"
                     android:layout_toRightOf="@+id/iv_calender"
                     android:text="30-05-2017"
-                    android:textSize="@dimen/dim_12"/>
+                    android:textSize="@dimen/dim_12" />
 
             </RelativeLayout>
 

@@ -9,4 +9,11 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+
+    <string-array name="array_catalogue">
+        <item>Ethnic Wear</item>
+        <item>Western Wear</item>
+        <item>Casual</item>
+
+    </string-array>
 </resources>

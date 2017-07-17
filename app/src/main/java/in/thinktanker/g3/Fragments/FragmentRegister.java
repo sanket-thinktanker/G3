@@ -90,6 +90,7 @@ public class FragmentRegister extends Fragment implements View.OnTouchListener {
         day = c.get(Calendar.DAY_OF_MONTH);
 
         et_date_of_birth.setOnKeyListener(null);
+
         et_first_name.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {

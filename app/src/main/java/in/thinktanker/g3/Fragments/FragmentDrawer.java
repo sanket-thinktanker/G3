@@ -29,14 +29,14 @@ import in.thinktanker.g3.R;
 /**
  * Created by MY PC on 06-Jul-17.
  */
-public class FragmentDrawer extends Fragment {
+public class FragmentDrawer extends Fragment implements CouponTypeAdapter.onclickItem {
     ImageView iv_g3_trnds_club, iv_store_zone, iv_coupon_type, iv_share_feedback, iv_help_support, iv_account_detail, iv_shop_online, iv_g3_video_link, iv_store_locator, iv_reference_friend, iv_customer_review;
     LinearLayout ll_g3_trends_cp, ll_store_offer, ll_g3_coupon_type;
 
     TextView tv_back, tv_feedback, tv_help_support;
 
     LinearLayout ll_item_share_feedback, ll_item_help_support;
-    RelativeLayout rl_store_offer, rl_coupon_type, rl_g3_trends_club, rl_share_feedback, rl_help_support, rl_shop_online, rl_account_detail, rv_customer_review, rl_reference_friend,rl_store_locator;
+    RelativeLayout rl_store_offer, rl_coupon_type, rl_g3_trends_club, rl_share_feedback, rl_help_support, rl_shop_online, rl_account_detail, rv_customer_review, rl_reference_friend, rl_store_locator;
     TextView tv_point_summary;
     RecyclerView rv_store_offer_zone, rv_coupon_type, rv_shop_online;
 
@@ -77,7 +77,7 @@ public class FragmentDrawer extends Fragment {
         rl_account_detail = (RelativeLayout) view.findViewById(R.id.rl_account_detail);
         rv_customer_review = (RelativeLayout) view.findViewById(R.id.rl_customer_review);
         rl_reference_friend = (RelativeLayout) view.findViewById(R.id.rl_reference_friend);
-        rl_store_locator=(RelativeLayout)view.findViewById(R.id.rl_store_locator);
+        rl_store_locator = (RelativeLayout) view.findViewById(R.id.rl_store_locator);
 
         rv_store_offer_zone = (RecyclerView) view.findViewById(R.id.rv_store_offer_zone);
         rv_coupon_type = (RecyclerView) view.findViewById(R.id.rv_coupon_type);
@@ -95,7 +95,6 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
-
             }
         });
 
@@ -103,6 +102,9 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
+                FragmentOffers offerFragment = new FragmentOffers();
+                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), offerFragment, getActivity());
+                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
             }
         });
 
@@ -110,7 +112,7 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
-                FragmentCouponCategory brandListing=new FragmentCouponCategory();
+                FragmentCouponCategory brandListing = new FragmentCouponCategory();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
 
@@ -121,13 +123,10 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
-               /* FragmentBrandListing brandListing=new FragmentBrandListing();
-                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
-                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);*/
-
-                FragmentDealsofVendor brandListing=new FragmentDealsofVendor();
+                FragmentBrandListing brandListing = new FragmentBrandListing();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), brandListing, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
+
             }
         });
 
@@ -142,13 +141,20 @@ public class FragmentDrawer extends Fragment {
             @Override
             public void onClick(View v) {
 
+               /* FragmentViewNewOffers viewNewOffers = new FragmentViewNewOffers();
+                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), viewNewOffers, getActivity());
+                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);*/
+
+               /* FragmentCatalogue fragmentCatalogue = new FragmentCatalogue();
+                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), fragmentCatalogue, getActivity());
+                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT)*/
             }
         });
 
         rl_store_locator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentStoreLocator storeLocator=new FragmentStoreLocator();
+                FragmentStoreLocator storeLocator = new FragmentStoreLocator();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), storeLocator, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
             }
@@ -160,10 +166,6 @@ public class FragmentDrawer extends Fragment {
                 FragmentCustomerReview customerReview = new FragmentCustomerReview();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), customerReview, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
-
-                /*FragmentNotification customerReview = new FragmentNotification();
-                Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), customerReview, getActivity());
-                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);*/
 
             }
         });
@@ -198,7 +200,7 @@ public class FragmentDrawer extends Fragment {
         tv_point_summary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentShoppingLedger shoppingLedger=new FragmentShoppingLedger();
+                FragmentShoppingLedger shoppingLedger = new FragmentShoppingLedger();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), shoppingLedger, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
             }
@@ -240,6 +242,7 @@ public class FragmentDrawer extends Fragment {
         CouponTypeAdapter couponAdapter = new CouponTypeAdapter(couponlist, getActivity());
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         rv_coupon_type.setLayoutManager(layoutManager);
+        couponAdapter.setOnclickItem(this);
         rv_coupon_type.setAdapter(couponAdapter);
     }
 
@@ -253,5 +256,13 @@ public class FragmentDrawer extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         rv_store_offer_zone.setLayoutManager(layoutManager);
         rv_store_offer_zone.setAdapter(storeAdapter);
+    }
+
+    @Override
+    public void onClick(int position) {
+
+        FragmentDealsofVendor dealsofVendor = new FragmentDealsofVendor();
+        Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), dealsofVendor, getActivity());
+        ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
     }
 }

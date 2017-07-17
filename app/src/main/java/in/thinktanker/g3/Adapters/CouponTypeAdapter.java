@@ -20,6 +20,8 @@ public class CouponTypeAdapter extends RecyclerView.Adapter<CouponTypeAdapter.Vi
     ArrayList<CouponTypeModel> couponlist;
     Context context;
 
+    onclickItem onclickItem;
+
     public CouponTypeAdapter(ArrayList<CouponTypeModel> couponlist, Context context) {
         this.couponlist = couponlist;
         this.context = context;
@@ -49,6 +51,23 @@ public class CouponTypeAdapter extends RecyclerView.Adapter<CouponTypeAdapter.Vi
             super(itemView);
 
             tv_coupon_type = (TextView) itemView.findViewById(R.id.tv_coupon_type);
+
+            tv_coupon_type.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (onclickItem != null) {
+                        onclickItem.onClick(getPosition());
+                    }
+                }
+            });
         }
+    }
+
+    public void setOnclickItem(onclickItem onclickItem) {
+        this.onclickItem = onclickItem;
+    }
+
+    public interface onclickItem {
+        public void onClick(int position);
     }
 }

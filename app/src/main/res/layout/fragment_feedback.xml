@@ -125,8 +125,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dim_130"
             android:layout_below="@+id/ll_feedback"
-
-
             android:layout_marginTop="@dimen/dim_40">
 
             <EditText

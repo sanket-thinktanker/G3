@@ -40,6 +40,9 @@ public class FragmentNotification extends Fragment {
     private void setNotification() {
         notificationlist = new ArrayList<NotificationModel>();
         notificationlist.add(new NotificationModel("Lorem Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididant ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud ", "Read More","30-05-2017"));
+        notificationlist.add(new NotificationModel("Lorem Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididant ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud ", "Read More","30-05-2017"));
+        notificationlist.add(new NotificationModel("Lorem Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididant ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud ", "Read More","30-05-2017"));
+        notificationlist.add(new NotificationModel("Lorem Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididant ut labore et dolore magna aliqua. Ut enim and minim veniam, quis nostrud ", "Read More","30-05-2017"));
 
         NotificationAdapter notificationAdapter = new NotificationAdapter(getActivity(),notificationlist);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);

@@ -13,20 +13,23 @@ import android.widget.ImageView;
 
 import in.thinktanker.g3.Common.Utils;
 import in.thinktanker.g3.Fragments.FragmentDrawer;
+import in.thinktanker.g3.Fragments.FragmentNotification;
 import in.thinktanker.g3.R;
 
 public class HomeActivity extends AppCompatActivity {
     public DrawerLayout drawer;
-    ImageView ic_menu_icon;
-    public FrameLayout fl_home,fl_drawer;
+    ImageView ic_menu_icon, iv_notification;
+    public FrameLayout fl_home, fl_drawer;
     FragmentDrawer fragmentDrawer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home2);
+        setContentView(R.layout.activity_home);
         setSideMenu();
         addFragmentDrawer();
     }
+
     private void setSideMenu() {
         try {
             Toolbar toolbar = ((Toolbar) findViewById(R.id.toolbar));
@@ -39,8 +42,8 @@ public class HomeActivity extends AppCompatActivity {
                 @Override
                 public void onDrawerOpened(View drawerView) {
                     super.onDrawerOpened(drawerView);
-                   // if (fragmentDrawer != null)
-                      //  fragmentHomeDrawer.setUserData();
+                    // if (fragmentDrawer != null)
+                    //  fragmentHomeDrawer.setUserData();
                 }
             };
             drawer.setDrawerListener(toggle);
@@ -56,10 +59,20 @@ public class HomeActivity extends AppCompatActivity {
         fl_home = (FrameLayout) findViewById(R.id.fl_home);
         fl_drawer = (FrameLayout) findViewById(R.id.fl_drawer);
         ic_menu_icon = (ImageView) findViewById(R.id.ic_menu_icon);
+
+        iv_notification = (ImageView) findViewById(R.id.iv_notification);
+
+        iv_notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentNotification customerReview = new FragmentNotification();
+                Utils.AddFragmentBack(R.id.fl_home, customerReview, HomeActivity.this);
+            }
+        });
         ic_menu_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             drawer.openDrawer(Gravity.RIGHT);
+                drawer.openDrawer(Gravity.RIGHT);
             }
         });
     }

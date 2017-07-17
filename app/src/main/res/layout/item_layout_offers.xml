@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dim_20">
 
     <RelativeLayout
+        android:id="@+id/rl_even"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dim_110"
         android:background="@color/colorgrey">
 
         <LinearLayout
+            android:id="@+id/ll_offers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -30,20 +33,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="offers"
-                android:textColor="@color/colorTextMedium"
+                android:textColor="@color/colorTextDark"
                 android:textSize="@dimen/dim_18" />
 
         </LinearLayout>
 
         <in.thinktanker.g3.Custom.TextViewSemiBold
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_offers"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_view_offers"
+            android:layout_toRightOf="@+id/ll_offers"
+            android:gravity="center"
             android:text="MEN"
+            android:textColor="@color/colorTextDark"
             android:textSize="@dimen/dim_20" />
 
         <in.thinktanker.g3.Custom.TextViewLight
-            android:layout_width="@dimen/dim_110"
+            android:id="@+id/tv_view_offers"
+            android:layout_width="@dimen/dim_130"
             android:layout_height="@dimen/dim_40"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
@@ -52,5 +61,65 @@
             android:gravity="center"
             android:text="VIEW MORE"
             android:textColor="@color/colorTextDark" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_odd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_110"
+        android:background="@color/colorgrey"
+        android:paddingTop="@dimen/dim_10"
+        android:visibility="gone">
+
+        <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_view_more"
+            android:layout_width="@dimen/dim_130"
+            android:layout_height="@dimen/dim_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="VIEW MORE"
+            android:textColor="@color/colorTextDark" />
+
+        <in.thinktanker.g3.Custom.TextViewSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ll_offers_odd"
+            android:layout_toRightOf="@+id/tv_view_more"
+            android:gravity="center"
+            android:text="WOMEN"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/dim_20" />
+
+        <LinearLayout
+            android:id="@+id/ll_offers_odd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dim_10"
+            android:orientation="vertical">
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:id="@+id/tv_offers_num_odd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="5"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dim_40" />
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="offers"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/dim_18" />
+
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

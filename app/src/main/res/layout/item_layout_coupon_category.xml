@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/dim_10"
+    android:paddingLeft="@dimen/dim_8"
+    android:paddingRight="@dimen/dim_8"
+    android:paddingTop="@dimen/dim_15"
+    android:paddingBottom="@dimen/dim_8"
     android:orientation="vertical">
 
     <RelativeLayout
