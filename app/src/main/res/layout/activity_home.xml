@@ -49,6 +49,7 @@
             android:weightSum="4">
 
             <LinearLayout
+                android:id="@+id/ll_home"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -78,6 +79,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_categories"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -107,6 +109,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_wallet"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -137,6 +140,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_my_account"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

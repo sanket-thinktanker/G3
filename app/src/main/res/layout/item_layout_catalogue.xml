@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/dim_10"
     android:paddingTop="@dimen/dim_10">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="@dimen/dim_170"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -20,9 +20,39 @@
             android:scaleType="fitXY"
             android:src="@drawable/catalogue_img_1" />
 
+        <LinearLayout
+            android:id="@+id/ll_discount"
+            android:layout_width="@dimen/dim_30"
+            android:layout_height="@dimen/dim_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim_20"
+            android:layout_marginTop="@dimen/dim_10"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <in.thinktanker.g3.Custom.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="50%"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/dim_8" />
+
+            <in.thinktanker.g3.Custom.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="OFF"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/dim_8" />
+        </LinearLayout>
+
         <in.thinktanker.g3.Custom.TextViewLight
+            android:id="@+id/tv_brand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_catalogue"
             android:layout_marginTop="@dimen/dim_10"
             android:text="Brand"
             android:textColor="@color/colorTextDark"
@@ -31,6 +61,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_brand"
             android:layout_marginTop="@dimen/dim_10">
 
             <in.thinktanker.g3.Custom.TextViewLight
@@ -51,5 +82,5 @@
                 android:textSize="@dimen/dim_12" />
         </RelativeLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

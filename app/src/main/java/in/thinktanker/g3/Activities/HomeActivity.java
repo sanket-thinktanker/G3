@@ -10,10 +10,15 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import in.thinktanker.g3.Common.Utils;
+import in.thinktanker.g3.Fragments.FragmentAccountDetail;
+import in.thinktanker.g3.Fragments.FragmentCouponCategory;
 import in.thinktanker.g3.Fragments.FragmentDrawer;
+import in.thinktanker.g3.Fragments.FragmentMain;
 import in.thinktanker.g3.Fragments.FragmentNotification;
+import in.thinktanker.g3.Fragments.FragmentShoppingLedger;
 import in.thinktanker.g3.R;
 
 public class HomeActivity extends AppCompatActivity {
@@ -21,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageView ic_menu_icon, iv_notification;
     public FrameLayout fl_home, fl_drawer;
     FragmentDrawer fragmentDrawer;
+    LinearLayout ll_home, ll_categories, ll_wallet, ll_my_account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +67,43 @@ public class HomeActivity extends AppCompatActivity {
         ic_menu_icon = (ImageView) findViewById(R.id.ic_menu_icon);
 
         iv_notification = (ImageView) findViewById(R.id.iv_notification);
+
+        ll_home = (LinearLayout) findViewById(R.id.ll_home);
+        ll_categories = (LinearLayout) findViewById(R.id.ll_categories);
+        ll_wallet = (LinearLayout) findViewById(R.id.ll_wallet);
+        ll_my_account = (LinearLayout) findViewById(R.id.ll_my_account);
+
+        ll_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentMain fragmentMain = new FragmentMain();
+                Utils.AddFragmentBack(R.id.fl_home, fragmentMain, HomeActivity.this);
+            }
+        });
+
+        ll_categories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentCouponCategory couponCategory = new FragmentCouponCategory();
+                Utils.AddFragmentBack(R.id.fl_home, couponCategory, HomeActivity.this);
+            }
+        });
+
+        ll_wallet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentShoppingLedger shoppingLedger = new FragmentShoppingLedger();
+                Utils.AddFragmentBack(R.id.fl_home, shoppingLedger, HomeActivity.this);
+            }
+        });
+
+        ll_my_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentAccountDetail accountDetail = new FragmentAccountDetail();
+                Utils.AddFragmentBack(R.id.fl_home, accountDetail, HomeActivity.this);
+            }
+        });
 
         iv_notification.setOnClickListener(new View.OnClickListener() {
             @Override

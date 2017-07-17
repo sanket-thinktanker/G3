@@ -4,8 +4,8 @@ package in.thinktanker.g3.Models;
  * Created by MY PC on 15-Jul-17.
  */
 public class CatalogueModel {
-    String id;
-    int catalogue_image;
+    private String id;
+    private int catalogue_image;
 
     public CatalogueModel(String id, int catalogue_image) {
         this.id = id;

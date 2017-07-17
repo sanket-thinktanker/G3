@@ -145,9 +145,9 @@ public class FragmentDrawer extends Fragment implements CouponTypeAdapter.onclic
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), viewNewOffers, getActivity());
                 ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);*/
 
-               /* FragmentCatalogue fragmentCatalogue = new FragmentCatalogue();
+               FragmentCatalogue fragmentCatalogue = new FragmentCatalogue();
                 Utils.AddFragmentBack(((HomeActivity) getActivity()).fl_home.getId(), fragmentCatalogue, getActivity());
-                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT)*/
+                ((HomeActivity) getActivity()).drawer.closeDrawer(Gravity.LEFT);
             }
         });
 
