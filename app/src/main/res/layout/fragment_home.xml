@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_weight="1"
+                    android:src="@drawable/account_detail_img" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_weight="1"
+                    android:src="@drawable/account_detail_img" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_weight="1"
+                    android:src="@drawable/account_detail_img" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_more"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_60"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_text">
+
+                    <!-- <de.hdodenhof.circleimageview.CircleImageView
+                         android:layout_width="@dimen/dim_60"
+                         android:layout_height="@dimen/dim_60"
+                         android:background="@drawable/circle_text" />-->
+
+                    <in.thinktanker.g3.Custom.TextViewLight
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="MORE"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/dim_12" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/catalogue_img_1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/green_border_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dim_10">
+
+                    <in.thinktanker.g3.Custom.TextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="SALE"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/dim_40" />
+
+                    <in.thinktanker.g3.Custom.TextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="GET UP TO 50% OFF"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/dim_14" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_10"
+                android:text="Top Categories"
+                android:textSize="@dimen/dim_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/women" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/men" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kids" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_150"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/wallet_banner"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:id="@+id/tv_current_bal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Points in Your Wallet"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dim_14" />
+
+                <in.thinktanker.g3.Custom.TextViewLight
+                    android:id="@+id/tv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_current_bal"
+                    android:text="1000"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/dim_30" />
+
+                <in.thinktanker.g3.Custom.TextViewSemiBold
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_30"
+                    android:layout_below="@+id/tv_point"
+                    android:background="@drawable/button_selector"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_2"
+                    android:text="SHOP NOW"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/text_10" />
+
+            </LinearLayout>
+
+            <in.thinktanker.g3.Custom.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_10"
+                android:text="Offers Zone"
+                android:textSize="@dimen/dim_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_200"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/discount_home_img"
+                    android:layout_marginRight="@dimen/dim_10"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/fashion_sale"
+                    android:layout_marginLeft="@dimen/dim_10"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sale1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sale2" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sale3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
